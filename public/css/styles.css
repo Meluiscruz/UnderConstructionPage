@@ -1,0 +1,131 @@
+/* styles.css */
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffa600bb;
+}
+
+.header {
+    background: repeating-linear-gradient(-45deg, #FFD700, #FFD700 50px, #000 50px, #000 100px);
+    padding: 50px;
+}
+
+.footer {
+    background: repeating-linear-gradient(45deg, #FFD700, #FFD700 50px, #000 50px, #000 100px),
+                linear-gradient(#FFD700, #FFD700) 50px 50px/100px 100% no-repeat;
+    width: 100%;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.damnbox {
+    width: 325px;
+    height: 100%;
+    background-color: #FFD700;
+    position: absolute;
+    z-index: 1;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffa600;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left-section{
+    flex-basis:50%;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.right-section {
+    flex-basis: 50%;
+    padding: 20px;
+}
+
+.left-section {
+    text-align: left;
+}
+
+.right-section {
+    text-align: right;
+}
+
+.quotes {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    order: 1;
+}
+
+.farewell {
+    text-align: center;
+    padding: 20px;
+    order: 2;
+}
+
+.footer {
+    color: #0a0000;
+    text-align: center;
+    background-color: #FFD700;
+    padding: 20px;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 12px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}
+
+p {
+    font-size: 14px;
+}
+
+  /* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .left-section,
+    .right-section {
+    flex-basis: 100%;
+    }
+}
+
+.centered-section {
+    text-align: center;
+    padding: 20px;
+}
